@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  /* Crisp White base (60% background color rule) */
+  --color-slate-950: #ffffff;
+  --color-slate-900: #ffffff;
+  
+  /* Light Gray neutral (30% structural color rule) */
+  --color-slate-850: #f3f4f6;
+  --color-slate-800: #d5dbdb;
+  --color-slate-700: #9ca3af;
+  --color-slate-650: #e2e8f0;
+  --color-slate-600: #4b5563;
+  --color-slate-500: #6b7280;
+  
+  /* Charcoal text (legibility) */
+  --color-slate-400: #374151;
+  --color-slate-300: #262626;
+  --color-slate-200: #262626;
+  --color-slate-100: #262626;
+  --color-slate-955: #262626;
+  --color-slate-50: #f9fafb;
+  
+  /* Golden Amber Accent (10% highlights & primary CTA rule) */
+  --color-violet-300: #fef08a;
+  --color-violet-400: #eab308;
+  --color-violet-500: #eab308;
+  --color-violet-600: #eab308;
+  --color-violet-700: #ca8a04;
+  --color-violet-850: #a16207;
+  
+  --color-indigo-300: #fef08a;
+  --color-indigo-400: #eab308;
+  --color-indigo-500: #eab308;
+  --color-indigo-600: #eab308;
+  --color-indigo-700: #ca8a04;
+  --color-indigo-850: #a16207;
+
+  --color-brand-primary: #ffffff;
+  --color-brand-secondary: #d5dbdb;
+  --color-brand-accent: #eab308;
+  --color-brand-success: #059669;
+  --color-brand-warning: #eab308;
+  --color-brand-border: #d5dbdb;
+
+  /* Custom sub-scales for component templates */
+  --color-slate-550: #4b5563;
+  --color-slate-250: #e2e8f0;
+  --color-amber-250: #fef08a;
+  --color-indigo-555: #4f46e5;
+}
+
+/* Custom global styles & scrollbars for premium aesthetics */
+@layer base {
+  body {
+    @apply bg-white text-[#262626] antialiased;
+    font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom Webkit Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-[#f3f4f6];
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-[#d5dbdb] rounded-md hover:bg-[#b0b8b8] transition-colors;
+  }
+}
